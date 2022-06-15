@@ -2,11 +2,14 @@
   "name": "@lreebom/event-listener",
   "version": "0.0.1",
   "description": "",
-  "main": "index.ts",
+  "main": "dist/Index.js",
   "author": "lreebom",
   "license": "Apache",
   "files": [
-    "src",
-    "index.ts"
-  ]
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "typescript": "^4.7.3"
+  }
 }
