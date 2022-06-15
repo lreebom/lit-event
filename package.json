@@ -1,0 +1,12 @@
+{
+  "name": "@lreebom/event-listener",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.ts",
+  "author": "lreebom",
+  "license": "Apache",
+  "files": [
+    "src",
+    "index.ts"
+  ]
+}
