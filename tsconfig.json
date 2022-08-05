@@ -15,7 +15,8 @@
     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     "lib": [
-      "ESNext"
+      "ESNext",
+      "DOM"
     ],
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
@@ -43,6 +44,7 @@
 
     /* JavaScript Support */
     // "allowJs": true,                                  /* Allow JavaScript files to be a part of your program. Use the `checkJS` option to get errors from these files. */
+    "allowJs": true,
     // "checkJs": true,                                  /* Enable error reporting in type-checked JavaScript files. */
     // "maxNodeModuleJsDepth": 1,                        /* Specify the maximum folder depth used for checking JavaScript files from `node_modules`. Only applicable with `allowJs`. */
 

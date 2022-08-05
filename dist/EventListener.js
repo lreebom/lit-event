@@ -24,7 +24,7 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     return to.concat(ar || Array.prototype.slice.call(from));
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.EventListener3 = exports.EventListener2 = exports.EventListener1 = void 0;
+exports.EventListener5 = exports.EventListener4 = exports.EventListener3 = exports.EventListener2 = exports.EventListener1 = exports.EventListener0 = void 0;
 var BaseEventListener = /** @class */ (function () {
     function BaseEventListener() {
         this._listeners = [];
@@ -55,6 +55,23 @@ var BaseEventListener = /** @class */ (function () {
     };
     return BaseEventListener;
 }());
+var EventListener0 = /** @class */ (function (_super) {
+    __extends(EventListener0, _super);
+    function EventListener0() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    EventListener0.prototype.addListener = function (Listener) {
+        this._add(Listener);
+    };
+    EventListener0.prototype.removeListener = function (Listener) {
+        this._remove(Listener);
+    };
+    EventListener0.prototype.invoke = function () {
+        this._invoke();
+    };
+    return EventListener0;
+}(BaseEventListener));
+exports.EventListener0 = EventListener0;
 var EventListener1 = /** @class */ (function (_super) {
     __extends(EventListener1, _super);
     function EventListener1() {
@@ -66,8 +83,8 @@ var EventListener1 = /** @class */ (function (_super) {
     EventListener1.prototype.removeListener = function (Listener) {
         this._remove(Listener);
     };
-    EventListener1.prototype.invoke = function (t1) {
-        this._invoke(t1);
+    EventListener1.prototype.invoke = function (v1) {
+        this._invoke(v1);
     };
     return EventListener1;
 }(BaseEventListener));
@@ -83,8 +100,8 @@ var EventListener2 = /** @class */ (function (_super) {
     EventListener2.prototype.removeListener = function (Listener) {
         this._remove(Listener);
     };
-    EventListener2.prototype.invoke = function (t1, t2) {
-        this._invoke(t1, t2);
+    EventListener2.prototype.invoke = function (v1, v2) {
+        this._invoke(v1, v2);
     };
     return EventListener2;
 }(BaseEventListener));
@@ -100,9 +117,43 @@ var EventListener3 = /** @class */ (function (_super) {
     EventListener3.prototype.removeListener = function (Listener) {
         this._remove(Listener);
     };
-    EventListener3.prototype.invoke = function (t1, t2, t3) {
-        this._invoke(t1, t2, t3);
+    EventListener3.prototype.invoke = function (v1, v2, v3) {
+        this._invoke(v1, v2, v3);
     };
     return EventListener3;
 }(BaseEventListener));
 exports.EventListener3 = EventListener3;
+var EventListener4 = /** @class */ (function (_super) {
+    __extends(EventListener4, _super);
+    function EventListener4() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    EventListener4.prototype.addListener = function (Listener) {
+        this._add(Listener);
+    };
+    EventListener4.prototype.removeListener = function (Listener) {
+        this._remove(Listener);
+    };
+    EventListener4.prototype.invoke = function (v1, v2, v3, v4) {
+        this._invoke(v1, v2, v3, v4);
+    };
+    return EventListener4;
+}(BaseEventListener));
+exports.EventListener4 = EventListener4;
+var EventListener5 = /** @class */ (function (_super) {
+    __extends(EventListener5, _super);
+    function EventListener5() {
+        return _super !== null && _super.apply(this, arguments) || this;
+    }
+    EventListener5.prototype.addListener = function (Listener) {
+        this._add(Listener);
+    };
+    EventListener5.prototype.removeListener = function (Listener) {
+        this._remove(Listener);
+    };
+    EventListener5.prototype.invoke = function (v1, v2, v3, v4, v5) {
+        this._invoke(v1, v2, v3, v4, v5);
+    };
+    return EventListener5;
+}(BaseEventListener));
+exports.EventListener5 = EventListener5;

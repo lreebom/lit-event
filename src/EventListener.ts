@@ -25,47 +25,92 @@ abstract class BaseEventListener {
     }
 }
 
-export class EventListener1<T1> extends BaseEventListener {
+export class EventListener0 extends BaseEventListener {
 
-    public addListener(Listener: ((t1: T1) => void)): void {
+    public addListener(Listener: (() => void)): void {
         this._add(Listener);
     }
 
-    public removeListener(Listener: ((t1: T1) => void)): void {
+    public removeListener(Listener: (() => void)): void {
         this._remove(Listener);
     }
 
-    public invoke(t1: T1): void {
-        this._invoke(t1);
+    public invoke(): void {
+        this._invoke();
+    }
+}
+
+export class EventListener1<T1> extends BaseEventListener {
+
+    public addListener(Listener: ((v1: T1) => void)): void {
+        this._add(Listener);
+    }
+
+    public removeListener(Listener: ((v1: T1) => void)): void {
+        this._remove(Listener);
+    }
+
+    public invoke(v1: T1): void {
+        this._invoke(v1);
     }
 }
 
 export class EventListener2<T1, T2> extends BaseEventListener {
 
-    public addListener(Listener: ((t1: T1, t2: T2) => void)): void {
+    public addListener(Listener: ((v1: T1, v2: T2) => void)): void {
         this._add(Listener);
     }
 
-    public removeListener(Listener: ((t1: T1, t2: T2) => void)): void {
+    public removeListener(Listener: ((v1: T1, v2: T2) => void)): void {
         this._remove(Listener);
     }
 
-    public invoke(t1: T1, t2: T2): void {
-        this._invoke(t1, t2);
+    public invoke(v1: T1, v2: T2): void {
+        this._invoke(v1, v2);
     }
 }
 
 export class EventListener3<T1, T2, T3> extends BaseEventListener {
 
-    public addListener(Listener: ((t1: T1, t2: T2, t3: T3) => void)): void {
+    public addListener(Listener: ((v1: T1, v2: T2, v3: T3) => void)): void {
         this._add(Listener);
     }
 
-    public removeListener(Listener: ((t1: T1, t2: T2, t3: T3) => void)): void {
+    public removeListener(Listener: ((v1: T1, v2: T2, v3: T3) => void)): void {
         this._remove(Listener);
     }
 
-    public invoke(t1: T1, t2: T2, t3: T3): void {
-        this._invoke(t1, t2, t3);
+    public invoke(v1: T1, v2: T2, v3: T3): void {
+        this._invoke(v1, v2, v3);
+    }
+}
+
+export class EventListener4<T1, T2, T3, T4> extends BaseEventListener {
+
+    public addListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4) => void)): void {
+        this._add(Listener);
+    }
+
+    public removeListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4) => void)): void {
+        this._remove(Listener);
+    }
+
+    public invoke(v1: T1, v2: T2, v3: T3, v4: T4): void {
+        this._invoke(v1, v2, v3, v4);
+    }
+}
+
+export class EventListener5<T1, T2, T3, T4, T5> extends BaseEventListener {
+
+    public addListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4, v5: T5) => void)): void {
+        this._add(Listener);
+    }
+
+    public removeListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4, v5: T5) => void)): void {
+        this._remove(Listener);
+    }
+
+    public invoke(v1: T1, v2: T2, v3: T3, v4: T4, v5: T5): void {
+        this._invoke(v1, v2, v3, v4, v5);
     }
 }

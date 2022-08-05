@@ -1,14 +1,17 @@
 {
   "name": "@lreebom/event-listener",
-  "version": "0.0.3",
-  "description": "",
-  "main": "dist/Index.js",
+  "version": "0.0.4",
+  "description": "Like Unity3D UnityEvent",
+  "main": "dist/index.js",
   "author": "lreebom",
   "license": "Apache",
   "files": [
     "dist",
     "src"
   ],
+  "scripts": {
+    "build": "npx tsc"
+  },
   "devDependencies": {
     "typescript": "^4.7.3"
   }
