@@ -1,6 +1,6 @@
 {
   "name": "lit-event",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An EventListener similar to UnityEvent",
   "repository": {
     "type": "git",
@@ -18,5 +18,15 @@
   },
   "devDependencies": {
     "typescript": "^5.1.3"
-  }
+  },
+  "keywords": [
+    "event",
+    "event-listener",
+    "eventListener",
+    "listener",
+    "events",
+    "eventEmitter",
+    "eventDispatcher",
+    "listeners"
+  ]
 }
