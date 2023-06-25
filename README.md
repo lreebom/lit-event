@@ -1,4 +1,8 @@
-# event-listener
+# lit-listener
+
+### Install
+
+`npm install lit-event`
 
 ### Use Like Unity3D UnityEvent
 
