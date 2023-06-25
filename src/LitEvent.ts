@@ -1,4 +1,4 @@
-abstract class BaseEventListener {
+abstract class LitEventBase {
     private _listeners: any[] = [];
 
     protected _add(Listener: any) {
@@ -20,12 +20,12 @@ abstract class BaseEventListener {
         }
     }
 
-    public clear(): void {
+    public removeAllListeners(): void {
         this._listeners = [];
     }
 }
 
-export class EventListener0 extends BaseEventListener {
+export class LitEvent extends LitEventBase {
 
     public addListener(Listener: (() => void)): void {
         this._add(Listener);
@@ -40,7 +40,7 @@ export class EventListener0 extends BaseEventListener {
     }
 }
 
-export class EventListener1<T1> extends BaseEventListener {
+export class LitEvent1<T1> extends LitEventBase {
 
     public addListener(Listener: ((v1: T1) => void)): void {
         this._add(Listener);
@@ -55,7 +55,7 @@ export class EventListener1<T1> extends BaseEventListener {
     }
 }
 
-export class EventListener2<T1, T2> extends BaseEventListener {
+export class LitEvent2<T1, T2> extends LitEventBase {
 
     public addListener(Listener: ((v1: T1, v2: T2) => void)): void {
         this._add(Listener);
@@ -70,7 +70,7 @@ export class EventListener2<T1, T2> extends BaseEventListener {
     }
 }
 
-export class EventListener3<T1, T2, T3> extends BaseEventListener {
+export class LitEvent3<T1, T2, T3> extends LitEventBase {
 
     public addListener(Listener: ((v1: T1, v2: T2, v3: T3) => void)): void {
         this._add(Listener);
@@ -85,7 +85,7 @@ export class EventListener3<T1, T2, T3> extends BaseEventListener {
     }
 }
 
-export class EventListener4<T1, T2, T3, T4> extends BaseEventListener {
+export class LitEvent4<T1, T2, T3, T4> extends LitEventBase {
 
     public addListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4) => void)): void {
         this._add(Listener);
@@ -100,7 +100,7 @@ export class EventListener4<T1, T2, T3, T4> extends BaseEventListener {
     }
 }
 
-export class EventListener5<T1, T2, T3, T4, T5> extends BaseEventListener {
+export class LitEvent5<T1, T2, T3, T4, T5> extends LitEventBase {
 
     public addListener(Listener: ((v1: T1, v2: T2, v3: T3, v4: T4, v5: T5) => void)): void {
         this._add(Listener);
