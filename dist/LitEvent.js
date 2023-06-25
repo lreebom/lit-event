@@ -29,13 +29,13 @@ var LitEventBase = /** @class */ (function () {
     function LitEventBase() {
         this._listeners = [];
     }
-    LitEventBase.prototype._add = function (Listener) {
-        if (this._listeners.indexOf(Listener) < 0) {
-            this._listeners.push(Listener);
+    LitEventBase.prototype._add = function (listener) {
+        if (this._listeners.indexOf(listener) < 0) {
+            this._listeners.push(listener);
         }
     };
-    LitEventBase.prototype._remove = function (Listener) {
-        var index = this._listeners.indexOf(Listener);
+    LitEventBase.prototype._remove = function (listener) {
+        var index = this._listeners.indexOf(listener);
         if (index > -1) {
             this._listeners.splice(index, 1);
         }
@@ -60,11 +60,11 @@ var LitEvent = /** @class */ (function (_super) {
     function LitEvent() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent.prototype.invoke = function () {
         this._invoke();
@@ -77,11 +77,11 @@ var LitEvent1 = /** @class */ (function (_super) {
     function LitEvent1() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent1.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent1.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent1.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent1.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent1.prototype.invoke = function (v1) {
         this._invoke(v1);
@@ -94,11 +94,11 @@ var LitEvent2 = /** @class */ (function (_super) {
     function LitEvent2() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent2.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent2.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent2.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent2.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent2.prototype.invoke = function (v1, v2) {
         this._invoke(v1, v2);
@@ -111,11 +111,11 @@ var LitEvent3 = /** @class */ (function (_super) {
     function LitEvent3() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent3.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent3.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent3.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent3.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent3.prototype.invoke = function (v1, v2, v3) {
         this._invoke(v1, v2, v3);
@@ -128,11 +128,11 @@ var LitEvent4 = /** @class */ (function (_super) {
     function LitEvent4() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent4.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent4.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent4.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent4.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent4.prototype.invoke = function (v1, v2, v3, v4) {
         this._invoke(v1, v2, v3, v4);
@@ -145,11 +145,11 @@ var LitEvent5 = /** @class */ (function (_super) {
     function LitEvent5() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
-    LitEvent5.prototype.addListener = function (Listener) {
-        this._add(Listener);
+    LitEvent5.prototype.addListener = function (listener) {
+        this._add(listener);
     };
-    LitEvent5.prototype.removeListener = function (Listener) {
-        this._remove(Listener);
+    LitEvent5.prototype.removeListener = function (listener) {
+        this._remove(listener);
     };
     LitEvent5.prototype.invoke = function (v1, v2, v3, v4, v5) {
         this._invoke(v1, v2, v3, v4, v5);
